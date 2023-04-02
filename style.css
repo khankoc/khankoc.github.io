@@ -279,69 +279,72 @@ header .navbar ul li a:hover{
 }
 
 /* Certificates Section */
-
-.certificates .box-container{
+.certificates .box-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
-    padding:1rem 0;
-    padding-left: 3rem;
-}
-
-.certificates .box-container .box{
-    background-color: rgb(73, 73, 73);
-    padding-top: 2rem;
-    padding-left: 2rem;
-    width:30rem;
-    margin:4rem 1rem;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 20px;
     
-    border-style:solid;
+  }
+  
+  .certificates .box-container .box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(73, 73, 73);
+    padding: 20px;
+    margin: 20px;
+    border-style: solid;
     border-color: white;
     border-radius: 20px;
-    position: relative;
-}
-
-.certificates .box-container .box img{
+    width: 40%;
+    min-width: 300px;
+    max-width: 400px;
+  }
+  
+  .certificates .box-container .box img {
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    
-}
-
-.certificates .box-container .box span{
+    margin-right: 20px;
+  }
+  
+  .certificates .box-container .box .box_information {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .certificates .box-container .box span {
     font-size: 1.3rem;
-    background:#222;
-    color:#fff;
-    border-radius: 5rem;
-    padding:.5rem 2.5rem;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .certificates .box-container .box .box_information {
+    flex: 1;
+    padding-left: 20px;
 }
 
-.certificates .box-container .box h3{
-    font-size: 2rem;
-    color:#fff;
-    padding-top: 1.5rem;
+.certificates .box-container .box p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 5px;
 }
 
-.certificates .box-container .box p{
-    font-size: 1.4rem;
-    color:#eee;
-    padding: 1rem 0;
+.certificates .box-container .box .code {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
 }
 
-.certificates .box-container .box i{
-    position: absolute;
-    top:-1.5rem; left:-2.5rem;
-    height:5rem;
-    width: 5rem;
-    border-radius: 50%;
-    line-height: 5rem;
-    text-align: center;
-    font-size: 2rem;
-    color:#fff;
-    background:var(--yellow);
+.certificates .box-container .box .date {
+    font-size: 14px;
+    color: #777;
 }
 
+  
+  
 
 
 
