@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Changing Text Effect</title>
+	<style>
+		#changing-text {
+			font-size: 32px;
+			font-weight: bold;
+			text-align: center;
+			position: relative;
+		}
+		#changing-text > span {
+			position: absolute;
+			opacity: 0;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			animation: fadeIn 0.5s ease-in-out forwards;
+		}
+		#changing-text > span:nth-child(1) {
+			animation-delay: 0s;
+		}
+		#changing-text > span:nth-child(2) {
+			animation-delay: 2s;
+		}
+		#changing-text > span:nth-child(3) {
+			animation-delay: 4s;
+		}
+		@keyframes fadeIn {
+			0% {
+				opacity: 0;
+			}
+			100% {
+				opacity: 1;
+			}
+		}
+		.fadeOut {
+			animation: fadeOut 0.5s ease-in-out forwards;
+		}
+		@keyframes fadeOut {
+			0% {
+				opacity: 1;
+			}
+			100% {
+				opacity: 0;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="changing-text">HI THERE ! I'm </div>
+	<script>
+		const changingText = document.getElementById("changing-text");
+		const words = ["Software Designer", "Software Developer", "Nuclear Engineer"];
+		let wordIndex = 0;
+
+		function changeWord() {
+			const currentWord = words[wordIndex];
+			const wordLength = currentWord.length;
+			const spanElement = document.createElement("span");
+
+			for(let i = 0; i < wordLength; i++) {
+				const charElement = document.createElement("span");
+				charElement.textContent = currentWord[i];
+				spanElement.appendChild(charElement);
+			}
+
+			changingText.appendChild(spanElement);
+
+			setTimeout(() => {
+				spanElement.classList.add("fadeOut");
+				setTimeout(() => {
+					spanElement.remove();
+					wordIndex = (wordIndex + 1) % words.length;
+					changeWord();
+				}, 500);
+			}, 2000);
+		}
+
+		changeWord();
+	</script>
+</body>
+</html>
