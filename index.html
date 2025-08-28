@@ -1,344 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kaan Koç</title>
-
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
-
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="style.css">
-
-</head>
-<body>
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/becore-icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-<!-- header section starts  -->
-
-<header>
-
-    <div class="user">
-        <img src="images/pic.jpg" alt="">
-        <h3 class="name">Kaan Koç</h3>
-        <p class="post">Software Developer</p>
-        
-
-    </div>
-
-    <nav class="navbar">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#portfolio">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-</header>
-
-<!-- header section ends -->
-
-<div id="menu" class="fas fa-bars"></div>
-
-<!-- home section starts  -->
-
-<section class="home" id="home">
-
-    <h3 >HI THERE !</h3>
-    <h1>I'm <span>Kaan Koç</span></h1>
-    <p> 
-        a third-year Nuclear Energy Engineering student at Hacettepe University. I was born in Ankara and I'm 23 years old. I have a deep knowledge in nuclear energy engineering and I am also an experienced developer.
-
-        I have extensive experience in software development, starting with Python in 2019, which I gained a lot of experience in. Afterwards, I learned HTML, CSS, and JavaScript to improve my web development skills. I have also worked with PHP for server-side web development. Currently, I am interested in mobile application development with Flutter and Dart.
-        
-        Furthermore, I am knowledgeable in subjects such as thermodynamics, fluid mechanics, and nuclear fuel cycle. 
-    </p>
-    <a href="#about"><button class="btn">About Me <i class="fas fa-user"></i></button></a>
-
-</section>
-
-<!-- home section ends -->
-
-<!-- about section starts  -->
-
-<section class="about" id="about">
-
-<h1 class="heading"> <span>About</span> Me </h1>
-
-<div class="row">
-
-    <div class="info">
-        <h3> <span> Name : </span> Kaan Koç </h3>
-        <h3> <span> Age : </span> 23 </h3>
-        <h3> <span> Qualification : </span> Nuclear Engineering </h3>
-        <h3> <span> Language : </span> Turkish,English </h3>
-        <a href="#home"><button class="btn"> Download CV <i class="fas fa-download"></i> </button></a>
-    </div>
-
-    <div class="counter">
-
-        <div class="box">
-            <span>3+</span>
-            <h3>Years of experience</h3>
-        </div>
-
-        <div class="box">
-            <span>19</span>
-            <h3>Project completed</h3>
-        </div>
-
-        <div class="box">
-            <span>8</span>
-            <h3>Certificates</h3>
-        </div>
-
-        
-
-    </div>
-
-</div>
-
-
-</section>
-
-<!-- about section ends -->
-
-<!-- education section starts  -->
-
-<section class="education" id="education">
-
-<h1 class="heading"> My <span>Education</span> </h1>
-
-<div class="box-container">
-
-
-    <div class="box">
-        <i class="fas fa-graduation-cap"></i>
-        <span>2019-2024</span>
-        <h3>Hacettepe University</h3>
-        <p>Nuclear Energy Engineering</p>
-    </div>
-
-    <div class="box">
-        <i class="fas fa-graduation-cap"></i>
-        <span>2016-2018</span>
-        <h3>Ankara Ümitköy Anadolu Lisesi</h3>
-        <p></p>
-    </div>
-
-    <div class="box">
-        <i class="fas fa-graduation-cap"></i>
-        <span>2014-2016</span>
-        <h3>Süleyman Demirel Anadolu Lisesi</h3>
-        <p></p>
-    </div>
-
-
-</div>
-
-
-</section>
-
-<section class="certificates" id="certificates">
-    <h1 class="heading">
-      <span>Licenses</span> and <span>Certificates</span>
-    </h1>
-    <div class="box-container">
-      <div class="box">
-        <img src="images/certificates/btk.jpeg" alt="Certificate 1">
-        <div class="box_information">
-          <span>Bilişim Hukuku</span>
-          <p>BTK Akademi - Ocak 2021</p>
-          <p>Yeterlilik Kimliği : XV1hWYDypA</p>
-        </div>
-      </div>
-
-      <div class="box">
-        <img src="images/certificates/btk.jpeg" alt="Certificate 1">
-        <div class="box_information">
-          <span>Introduction to Social Media Expertise</span>
-          <p>BTK Akademi - Ocak 2021</p>
-          <p>Yeterlilik Kimliği : XV1hWYDypA</p>
-        </div>
-      </div>
-
-      <div class="box">
-        <img src="images/certificates/btk.jpeg" alt="Certificate 1">
-        <div class="box_information">
-          <span>Android Mobile Application Development Training with Kotlin</span>
-          <p>BTK Akademi - Şubat 2021</p>
-          <p>Yeterlilik Kimliği : lK1h7KdXAL</p>
-        </div>
-      </div>
-
-      <div class="box">
-        <img src="images/certificates/btk.jpeg" alt="Certificate 1">
-        <div class="box_information">
-          <span>Web Development with HTML5</span>
-          <p>BTK Akademi - Temmuz 2021</p>
-          <p>Yeterlilik Kimliği : lK1h7KdXAL</p>
-        </div>
-      </div>
-
-      <div class="box">
-        <img src="images/certificates/google.jpeg" alt="Certificate 1">
-        <div class="box_information">
-          <span>Fundamentals of Digital Marketing</span>
-          <p>Google - Mart 2021</p>
-          <p>Yeterlilik Kimliği TGL 25U DXZ</p>
-        </div>
-      </div>
-
-      <div class="box">
-        <img src="images/certificates/linkedin.jpeg" alt="Certificate 1">
-        <div class="box_information">
-          <span>Learning Python</span>
-          <p>Linkedin - Ocak 2021</p>
-          <a href="https://www.linkedin.com/learning/certificates/3c2fd42537c5d1a7b5a3f0d622601d5a3e28fa21684518c32bfdb0935b855c9b?trk=backfilled_certificate"> Yeterlilik Belgesini Göster</a>
-        </div>
-      </div>
-
-      <div class="box">
-        <img src="images/certificates/webtures.jpeg" alt="Certificate 1">
-        <div class="box_information">
-          <span>Google Search Console</span>
-          <p>Webtures - Mart 2023</p>
-          <a href="https://www.webtures.com/certificate/verify/googlesearchconsoleegitimi20230316/6360-kaankoc/"> Yeterlilik Belgesini Göster</a>
-        </div>
-      </div>
-
-      <div class="box">
-        <img src="images/certificates/webtures.jpeg" alt="Certificate 1">
-        <div class="box_information">
-          <span>Google Search Console</span>
-          <p>Webtures - Mart 2023</p>
-          <a href="https://www.webtures.com/certificate/verify/yerelseostratejileriegitimi20230323/5642-kaankoc/"> Yeterlilik Belgesini Göster</a>
-        </div>
-      </div>
-
-      
-      
-      
-      
-      
-    </div>
-  </section>
-  
-
-<!-- education section ends -->
-
-<!-- portfolio section starts  -->
-
-<section class="portfolio" id="portfolio">
-
-<h1 class="heading"> My <span>Projects</span> </h1>
-
-<div class="box-container">
-
-    <div class="box">
-        <img src="images/img3.jpg" alt="">
-        <p >Restaurant QR Menu</p>
-
-    </div>
-
-    <div class="box">
-        <img src="images/img2.jpg" alt="">
-        <p >Mobile Application</p>
-    </div>
-
-    <div class="box">
-        
-        <img src="images/img1.jpg" alt="">
-        <p>Social Media Marketing</p>
-        
-    </div>
-
-    <div class="box">
-        <img src="images/img4.jpg" alt="">
-        <p>Website For Shopping</p>
-
-    </div>
-
+    <!-- SEO Meta Tags -->
+    <title>BeCore ATF - Gelecek Nesil Kaza Toleranslı Yakıt | Teknofest 2024</title>
+    <meta name="description" content="BeCore ATF yakıt teknolojisi ile nükleer güvenliği yeniden tanımlıyoruz. SiC ve Cr kaplama çözümleri, yüksek sıcaklık dayanımı ve gelişmiş emniyet özellikleri." />
+    <meta name="keywords" content="ATF, nükleer yakıt, SiC kaplama, kaza toleranslı yakıt, nükleer güvenlik, teknofest, nükleer enerji" />
+    <meta name="author" content="BeCore ATF Team" />
     
-
-
-</div>
-
-</section>
-
-<!-- portfolio section ends -->
-
-<!-- contact section starts  -->
-
-<section class="contact" id="contact">
-
-<h1 class="heading"> <span>Contact</span> Me </h1>
-
-<div class="row">
-
-    <div class="content">
-
-        <h3 class="title">Contact Info</h3>
-
-        <div class="info">
-            <h3> <i class="fas fa-envelope"></i> kaankocmail@gmail.com </h3>
-            <h3> <i class="fas fa-map-marker-alt"></i> Ankara, Turkey. </h3>
-        </div>
-
-    </div>
-
-    <form action="">
-
-        <input type="text" placeholder="name" class="box">
-        <input type="email" placeholder="email" class="box">
-        <input type="text" placeholder="project" class="box">
-        <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
-        <button type="submit" class="btn"> Send <i class="fas fa-paper-plane"></i> </button>
-
-    </form>
-
-    <div>
-        <iframe src="https://www.google.com/maps/embed/v1/place?q=Üniversiteler,+Hacettepe+Üniversitesi+Beytepe+Yerleşkesi,+Çankaya/Ankara,+Türkiye&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8
-        " width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-
-</div>
-
-</section>
-
-<!-- contact section ends -->
-
-
-<!-- scroll top button  -->
-
-<a href="#home" class="top">
-    <img src="images/scroll-top-img.png" alt="">
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- jquery cdn link  -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-<!-- custom js file link  -->
-<script src="script.js" type="text/javascript"></script>
-
-
-
-</body>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://becore-atf.com/" />
+    <meta property="og:title" content="BeCore ATF - Gelecek Nesil Kaza Toleranslı Yakıt | Teknofest 2024" />
+    <meta property="og:description" content="BeCore ATF yakıt teknolojisi ile nükleer güvenliği yeniden tanımlıyoruz. SiC ve Cr kaplama çözümleri, yüksek sıcaklık dayanımı ve gelişmiş emniyet özellikleri." />
+    <meta property="og:image" content="/images/becore-og-image.jpg" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://becore-atf.com/" />
+    <meta property="twitter:title" content="BeCore ATF - Gelecek Nesil Kaza Toleranslı Yakıt | Teknofest 2024" />
+    <meta property="twitter:description" content="BeCore ATF yakıt teknolojisi ile nükleer güvenliği yeniden tanımlıyoruz. SiC ve Cr kaplama çözümleri, yüksek sıcaklık dayanımı ve gelişmiş emniyet özellikleri." />
+    <meta property="twitter:image" content="/images/becore-og-image.jpg" />
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Performance & Security -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#0B132B">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "BeCore ATF",
+      "description": "Gelecek nesil kaza toleranslı yakıt teknolojisi",
+      "url": "https://becore-atf.com",
+      "logo": "https://becore-atf.com/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "",
+        "contactType": "customer service",
+        "email": "becore@teknofest.edu.tr"
+      },
+      "sameAs": [
+        "https://github.com/becore-atf",
+        "https://linkedin.com/company/becore-atf"
+      ]
+    }
+    </script>
+    <script type="module" crossorigin src="/assets/index-Dqvf-Trs.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CJRxrF72.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
 </html>
