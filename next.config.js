@@ -1,10 +1,21 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production'
+const isGithubPages = process.env.GITHUB_PAGES === 'true'
+
 const nextConfig = {
   reactStrictMode: true,
-  output: 'export',
+  output: isProd ? 'export' : undefined,
   trailingSlash: true,
-  assetPrefix: process.env.NODE_ENV === 'production' ? 'https://khankoc.github.io' : '',
-  basePath: process.env.NODE_ENV === 'production' ? '' : '',
+  assetPrefix: '',
+  basePath: '',
+  distDir: 'out',
+  webpack: (config) => {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '@': require('path').resolve(__dirname, 'src'),
+    }
+    return config
+  },
   images: {
     unoptimized: true,
     remotePatterns: [

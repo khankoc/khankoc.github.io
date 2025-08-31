@@ -1,9 +1,9 @@
 import { NextResponse } from 'next/server';
 import { sendEmail } from '@/lib/sendEmail';
+import { SITE_CONFIG } from '@/config/site.config';
+import { NextRequest } from 'next/server';
 
-const { SITE_CONFIG } = require('@/config/site.config');
-
-export async function POST(request) {
+export async function POST(request: NextRequest) {
   try {
     // Form verilerini al
     const body = await request.json();

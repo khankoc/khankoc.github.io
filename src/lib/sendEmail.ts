@@ -1,9 +1,16 @@
 import nodemailer from 'nodemailer';
 
-export async function sendEmail({ to, subject, text, html }) {
+interface EmailOptions {
+  to: string;
+  subject: string;
+  text: string;
+  html?: string;
+}
+
+export async function sendEmail({ to, subject, text, html }: EmailOptions) {
   try {
     // Gmail SMTP transporter oluştur
-    const transporter = nodemailer.createTransporter({
+    const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
         user: process.env.EMAIL_USER, // Gmail adresiniz
