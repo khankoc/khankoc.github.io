@@ -1,0 +1,120 @@
+/* Dikey zaman çizelgesi stilleri */
+.vertical-timeline {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem 0;
+}
+
+.vertical-timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 18px;
+  height: 100%;
+  width: 2px;
+  background: rgba(var(--border), 0.5);
+}
+
+@media (min-width: 768px) {
+  .vertical-timeline::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.vertical-timeline-element {
+  position: relative;
+  margin: 2rem 0;
+}
+
+.vertical-timeline-element-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgb(var(--primary));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 0 0 4px rgba(var(--primary), 0.2);
+}
+
+@media (min-width: 768px) {
+  .vertical-timeline-element-icon {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.vertical-timeline-element-content {
+  position: relative;
+  margin-left: 60px;
+  background: rgb(var(--card));
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px -8px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 768px) {
+  .vertical-timeline-element-content {
+    width: 44%;
+    margin-left: 0;
+  }
+  
+  .vertical-timeline-element:nth-child(even) .vertical-timeline-element-content {
+    margin-left: auto;
+  }
+  
+  .vertical-timeline-element:nth-child(odd) .vertical-timeline-element-content {
+    margin-right: auto;
+  }
+}
+
+.vertical-timeline-element-content-arrow {
+  content: '';
+  position: absolute;
+  top: 16px;
+  left: -10px;
+  height: 0;
+  width: 0;
+  border-style: solid;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent rgb(var(--card)) transparent transparent;
+}
+
+@media (min-width: 768px) {
+  .vertical-timeline-element:nth-child(even) .vertical-timeline-element-content-arrow {
+    left: auto;
+    right: -10px;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent rgb(var(--card));
+  }
+}
+
+.vertical-timeline-element-date {
+  display: block;
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: rgba(var(--foreground), 0.7);
+}
+
+@media (min-width: 768px) {
+  .vertical-timeline-element-date {
+    position: absolute;
+    width: 100%;
+    left: 124%;
+    top: 0;
+    text-align: left;
+  }
+  
+  .vertical-timeline-element:nth-child(even) .vertical-timeline-element-date {
+    left: auto;
+    right: 124%;
+    text-align: right;
+  }
+} 
