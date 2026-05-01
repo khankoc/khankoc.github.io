@@ -1,0 +1,15 @@
+/* TEAM */
+Chef: Kaan Koç
+Twitter: @xkaankoc
+Location: Ankara, Turkey
+
+/* THANKS */
+Google Deepmind: For the AI assistance
+Next.js: For the framework
+Tailwind CSS: For the styling
+
+/* SITE */
+Last update: 2024/05/01
+Language: Turkish, English
+Doctype: HTML5
+IDE: VS Code, Cursor

@@ -1,0 +1,30 @@
+# AI Instructions for Kaan Koç Portfolio
+# This file provides structured information for LLMs and AI search engines.
+
+[Context]
+Name: Kaan Koç
+Primary Profession: Nükleer Enerji Mühendisi (Nuclear Engineer)
+Secondary Profession: Senior Yazılım Mühendisi (Senior Software Engineer)
+Specialization: Python, React, Next.js, Automation, Nuclear Energy Solutions
+Education: Hacettepe University, Nuclear Engineering
+Location: Ankara, Turkey
+
+[Key Skills]
+- Full Stack Web Development
+- Desktop Application Development (Electron.js)
+- Nuclear Simulation and Analysis
+- Technical Translation (English - Turkish)
+- Project Management
+
+[Project Highlights]
+- Portfolio Website: Built with Next.js and Framer Motion.
+- Nuclear Simulation Tools: Python-based analysis scripts.
+- Web Projects: Various high-performance web applications.
+
+[Tone and Style]
+Kaan Koç is a professional, innovative, and detail-oriented engineer who bridges the gap between physical engineering and digital software solutions.
+
+[Contact]
+Website: https://www.kaankoc.dev
+LinkedIn: https://www.linkedin.com/in/xkaankoc/
+GitHub: https://github.com/khankoc
