@@ -1,15 +1,15 @@
 /* TEAM */
 Chef: Kaan Koç
-Twitter: @xkaankoc
+Site: https://kaankoc.com.tr
+Contact: kaankocmail@gmail.com
 Location: Ankara, Turkey
 
 /* THANKS */
-Google Deepmind: For the AI assistance
 Next.js: For the framework
 Tailwind CSS: For the styling
 
 /* SITE */
-Last update: 2024/05/01
+Last update: 2026/07/07
 Language: Turkish, English
 Doctype: HTML5
-IDE: VS Code, Cursor
+IDE: VS Code, Claude Code

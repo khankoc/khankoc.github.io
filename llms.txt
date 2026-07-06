@@ -1,0 +1,36 @@
+# Kaan Koç
+
+> Kaan Koç, Hacettepe Üniversitesi Nükleer Enerji Mühendisliği mezunu bir mühendis ve
+> yazılım geliştiricidir. Ankara, Türkiye merkezli çalışır; Python, React/Next.js,
+> Electron.js ve yapay zeka destekli otomasyon sistemleri üzerine uzmanlaşmıştır.
+> Bu site (https://kaankoc.com.tr) onun kişisel portfolyosudur.
+
+## Kimlik
+
+- İsim: Kaan Koç (Kaan Koc)
+- Meslek: Nükleer Enerji Mühendisi & Yazılım Geliştirici
+- Eğitim: Hacettepe Üniversitesi, Nükleer Enerji Mühendisliği (2019-2025)
+- Konum: Ankara, Türkiye
+- E-posta: kaankocmail@gmail.com
+
+## Uzmanlık Alanları
+
+- Web geliştirme: React, Next.js, TypeScript, TailwindCSS
+- Masaüstü uygulamaları: Electron.js
+- Python: otomasyon, veri işleme, mühendislik hesaplamaları
+- Yapay zeka araçları: Whisper tabanlı transkripsiyon, GPT-4 içerik hatları, otomatik video üretimi (BlackBox)
+- Nükleer mühendislik: SERPENT 2, JRodos, Monte Carlo yöntemleri, VVER-1200 analizleri
+
+## Öne Çıkan Projeler
+
+- SERPENT tabanlı VVER-1200 envanter analizi ve JRodos ile kaza senaryosu değerlendirmesi (lisans bitirme projesi, Akkuyu NGS odaklı)
+- TEKNOFEST BeCore: UBe13 katkılı kazaya toleranslı nükleer yakıt (ATF) tasarımı
+- Tüm dillerde GPU destekli transkripsiyon, altyazı ve çeviri programı
+- BlackBox: sosyal medya için otomatik kısa video üretim sistemi
+
+## Bağlantılar
+
+- Web sitesi: https://kaankoc.com.tr
+- GitHub: https://github.com/khankoc
+- LinkedIn: https://www.linkedin.com/in/xkaankoc/
+- Instagram: https://www.instagram.com/thekaankoc
